@@ -7,7 +7,6 @@ import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Shop from "./pages/Shop";
 import BookDetails from "./pages/BookDetails";
-import Books from "./pages/Books";
 import CartProvider from "./context/CartContext";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
