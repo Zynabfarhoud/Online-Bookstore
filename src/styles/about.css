@@ -7,6 +7,12 @@
 }
 
 .aboutpage h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  white-space: nowrap;
   font-family: Georgia, serif;
   font-size: 48px;
   color: #4a2c1d;
@@ -51,7 +57,8 @@
   }
 
   .aboutpage h1 {
-    font-size: 36px;
+    font-size: 26px;
+    gap: 4px;
   }
 
   .aboutcontent {
