@@ -101,3 +101,75 @@
   color: #5c4033;
   margin-bottom: 20px;
 }
+
+/* Mobile design */
+@media screen and (max-width: 600px) {
+  .home {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    min-height: auto;
+    padding: 40px 20px;
+    gap: 35px;
+    overflow: visible;
+  }
+
+  .content {
+    width: 100%;
+    flex: none;
+  }
+
+  .content h4 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .content h1 {
+    font-size: clamp(42px, 12vw, 55px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .content p {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+
+  .heroimage {
+    display: flex;
+    width: 100%;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroimage img {
+    display: block;
+    width: 75%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .welcomesec {
+    width: 100%;
+    padding: 40px 20px;
+    margin-top: 0;
+  }
+
+  .welcomesec h2 {
+    font-size: 27px;
+  }
+
+  .welcomesec p {
+    font-size: 15px;
+  }
+}

@@ -94,3 +94,44 @@
   margin-right: 10px;
   vertical-align: middle;
 }
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .logocircle {
+    width: 55px;
+    height: 55px;
+    margin: 0;
+  }
+
+  .links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .links a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .Login {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+}

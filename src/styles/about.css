@@ -62,14 +62,6 @@
     font-size: 16px;
   }
 }
-/*.circle {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  vertical-align: middle;
-  margin: 0 10px;
-}*/
 
 .circle {
   width: clamp(35px, 5vw, 70px);
