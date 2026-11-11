@@ -1,0 +1,96 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background-color: #f6ede3;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #3b2314;
+  text-decoration: none;
+  font-family: "Georgia", serif;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #3b2314;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.links a:hover,
+.links a[href="/"] {
+  background-color: #5c3a21;
+  color: #ffffff;
+}
+
+.links a[href="/login"],
+.links a[href="/signup"] {
+  font-weight: 600;
+}
+
+.cartlink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.Login {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loginbtn {
+  text-decoration: none;
+  color: #5c3a21;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid #5c3a21;
+  transition: all 0.3s ease;
+}
+
+.loginbtn:hover {
+  background-color: #5c3a21;
+  color: #ffffff;
+}
+
+.signupbtn {
+  text-decoration: none;
+  background-color: #5c3a21;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.signupbtn:hover {
+  background-color: #432a18;
+}
+
+.logocircle {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}

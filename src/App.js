@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Cart from "./pages/Cart";
+import Shop from "./pages/Shop";
+import BookDetails from "./pages/BookDetails";
+import Books from "./pages/Books";
+import CartProvider from "./context/CartContext";
+import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import "./App.css";
+import "./styles/home.css";
+import "./styles/NavBar.css";
+import "./styles/footer.css";
+import "./styles/contact.css";
+import "./styles/about.css";
 
 function App() {
+  useEffect(() => {
+    document.title = "Bookora | Online BookStore";
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <CartProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Shop" element={<Shop />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/BookDetails" element={<BookDetails />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+        <Footer />
+      </CartProvider>
+    </BrowserRouter>
   );
 }
 

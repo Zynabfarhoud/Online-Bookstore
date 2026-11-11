@@ -1,0 +1,50 @@
+.searchbar {
+  display: block;
+  width: 60%;
+  max-width: 550px;
+  margin: 0 auto 30px;
+  padding: 14px 20px;
+  border: 1px solid #d8c8b8;
+  border-radius: 30px;
+  outline: none;
+  font-size: 15px;
+  background: white;
+  transition: 0.3s;
+}
+
+.searchbar:focus {
+  border-color: #9b6348;
+  box-shadow: 0 0 8px rgba(155, 99, 72, 0.2);
+}
+
+@media (max-width: 700px) {
+  .searchbar {
+    width: 85%;
+  }
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.categories button {
+  padding: 11px 24px;
+  border: 1px solid #9b6348;
+  border-radius: 25px;
+  background: transparent;
+  color: #704735;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categories button:hover,
+.categories button.active {
+  background: #704735;
+  color: white;
+  transform: translateY(-2px);
+}

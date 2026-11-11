@@ -1,0 +1,59 @@
+.lcontainer,
+.scontainer {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: inherit;
+}
+
+.lcontainer h2,
+.scontainer h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333333;
+  font-size: 24px;
+}
+
+.lcontainer form,
+.scontainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lcontainer input,
+.scontainer input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.lcontainer input:focus,
+.scontainer input:focus {
+  border-color: #8c6d53;
+}
+
+.lcontainer button,
+.scontainer button {
+  padding: 12px;
+  background-color: #4a3525;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+.lcontainer button:hover,
+.scontainer button:hover {
+  background-color: #38271b;
+}
