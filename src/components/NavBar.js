@@ -14,8 +14,7 @@ function NavBar() {
         <Link to="/Shop">Shop</Link>
         <Link to="/Contact">Contact</Link>
         <Link to="/Cart" className="cartlink">
-          {" "}
-          Cart 🛒{" "}
+          Cart 🛒
         </Link>
       </div>
 
